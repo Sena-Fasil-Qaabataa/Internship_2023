@@ -13,4 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home');
+Route::get('/', function () {
+    return view('home');
+});
+Route::get('/sena', function () {
+    return ('home');
+});
