@@ -10,15 +10,17 @@
 </head>
 <body>
 
+    @extends('layouts.base')
+    @section('content')
 <div class="jumbotron text-center">
   <h1>My PHP Laravel 10.x</h1>
-  <p>Laravel is PHP's framework at the backend</p> 
+  <p>Laravel is PHP's framework at the backend</p>
 </div>
   <div class="containers">
     <h1 class="mvc text-center"text-center> <abbr title="Model View Controller">MVC</abbr></h1>
-    <p class="mvcdef text-center"> Model-View-Controller (MVC) is a software design pattern commonly used in script languages such as 
-    <br>    
-    JavaScript, PHP, and Python.  It separates the application logic into three interconnected components – Model, View, and 
+    <p class="mvcdef text-center"> Model-View-Controller (MVC) is a software design pattern commonly used in script languages such as
+    <br>
+    JavaScript, PHP, and Python.  It separates the application logic into three interconnected components – Model, View, and
     <br>
     Controller – to improve code structure, organization, and scalability.</p>
   </div>
@@ -35,12 +37,12 @@
       <p>It generates the visual interface that users see and provides data to the user interface from the Model through the Controller.</p>
     </div>
     <div class="col-sm-4">
-      <h2><abbr title="Controller">C</abbr> </h2>        
+      <h2><abbr title="Controller">C</abbr> </h2>
       <p>The Controller component acts as the intermediary between the Model and the View...</p>
       <p>It receives user input from the View, modifies the Model based on that input, and updates the View with the changes from the Model.</p>
     </div>
   </div>
 </div>
-
+@endsection
 </body>
 </html>

@@ -16,6 +16,8 @@
         </style>
     </head>
     <body class="antialiased">
+@extends('layouts.base')
+@section('content')
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
@@ -51,8 +53,8 @@
                                 <h2 class="mt-5 text-xl font-semibold text-red-900 dark:text-red">Documentation</h2>
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    
-                                </p>Laravel has wonderful documentation covering every aspect of the framework. 
+
+                                </p>Laravel has wonderful documentation covering every aspect of the framework.
                             </div>
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
@@ -135,5 +137,6 @@
                 </div>
             </div>
         </div>
+@endsection
     </body>
 </html>
