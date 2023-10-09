@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{--  @dd(asset('css'))  --}}
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <title>Create page</title>
 </head>
 <body>
-<h1>this is Edit page</h1>
+    @extends('layouts.base')
+    @section('content')
+<h1 class="H">this is Create page</h1>
 <div>
 @if($errors->any())
 
@@ -21,7 +25,8 @@
 </ul>
 @endif
 </div>
-<form method="POST" action="{{ route('product.store') }}">
+<div class="conta">
+<form  method="POST" action="{{ route('product.store') }}">
     @csrf
     @method('post')
     <div>
@@ -42,5 +47,7 @@
             </div>
             <input type="submit" value="save value"/>
 </form>
+</div>
+@endsection
 </body>
 </html>

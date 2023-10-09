@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Create page</title>
+
 </head>
 <body>
+    @extends('layouts.base')
+    @section('content')
 <h1>this is create blade</h1>
-<div>
-@if($errors->any())
-
-<ul>
-    @foreach ($errors-> all() as $error)
-<li>
-    {{ $error }}
-</li>
-
-    @endforeach
-</ul>
-@endif
-</div>
 <form method="POST" action="{{ route('product.update' ,['product'=> $product]) }}">
     @csrf
     @method('put')
@@ -42,5 +33,6 @@
             </div>
             <input type="submit" value="update value"/>
 </form>
+@endsection
 </body>
 </html>

@@ -42,6 +42,15 @@ Route::get('/contact', function () {
 Route::get('/wel', function () {
     return view('Pages.wel');
 })->name('wel');
+Route::get('/index', function () {
+    return view('products.index');
+})->name('index');
+Route::get('/create', function () {
+    return view('products.create');
+})->name('create');
+Route::get('/edit', function () {
+    return view('products.edit');
+})->name('edit');
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
  Route::get('product/create',[ProductController::class,'create'])->name('product.create');

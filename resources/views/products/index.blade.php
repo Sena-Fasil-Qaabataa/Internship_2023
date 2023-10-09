@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create a Document</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    {{--  <link rel="stylesheet" href="../CSS/app.css">  --}}
+    {{--  <style>
+        h1{
+            text-align: center;
+        }
+        table{
+padding: 0;
+margin: 0;
+            text-align: center;
+        }
+    </style>  --}}
 </head>
 <body>
-<h1>This is the process of Indexing blade</h1>
-<div>
+    @extends('layouts.base')
+    @section('content')
+<h1 class="ech2">This is the process of Indexing blade</h1>
+{{--  <div>
     @if(session()->has('susccess'))
     <div>
         {{ session ('success') }}
     </div>
     @endif
+</div>  --}}
+<div >
+    <div class="cont">
+    <a class="A" href="{{ route('products.create') }}">create a product</a>
 </div>
-<div>
-    <a href="{{ 'product.create' }}">create a product</a>
-    <table border="2">
-        <tr>
+    <table border="4">
+        <tr >
             <th>id</th>
             <th>name</th>
             <th>qty</th>
@@ -48,5 +65,6 @@
         @endforeach
     </table>
 </div>
+@endsection
 </body>
 </html>

@@ -21,7 +21,7 @@
         nav a {
   text-decoration: none;
   color: hsl(266, 78%, 45%); /* Link text color */
-  font-size: larger;
+  font-size: 100%;
 
 }
 .Student{
@@ -47,6 +47,9 @@
                 <li><a href="{{ route('mvc') }}">MVC</a></li>
                 <li><a href="{{route('wel')}}">Welcome</a></li>
                 <li><a href="{{route('welcome')}}">Welcomed</a></li>
+                <li><a href="{{route('create')}}">CREATE</a></li>
+                <li><a href="{{route('edit')}}">INDEX</a></li>
+                <li><a href="{{ route('index') }}">EDIT</a></li>
             </ul>
         </nav>
     </div>

@@ -45,7 +45,7 @@ public function update(Product $product ,Request $request){
         'description' => 'required',
     ]);
 
-    $user = Product::create([
+    $user = $product->update([
         'name' => $request->input('name'),
         'qty' => $request->input('qty'),
         'price' => $request->input('price'),

@@ -1,0 +1,56 @@
+.con {
+    background-color: blue;
+}
+
+.ech2 {
+    background-color: goldenrod;
+    color: rgb(201, 17, 26);
+    font: 100;
+    text-align: center;
+}
+
+.conta {
+    text-align: center;
+    padding-top: 12px;
+    width: 100%;
+}
+
+table {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+td {
+    background-color: white;
+}
+
+.cont {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 100;
+}
+
+.H {
+    background-color: goldenrod;
+    color: rgb(201, 17, 26);
+    font: 100;
+    text-align: center;
+}
+
+.A {
+    color: #04AA6D;
+}
+
+
+/* label {
+    width: 100;
+} */
