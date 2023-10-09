@@ -16,16 +16,20 @@
        li{
             display:inline-block; margin-right:80px; padding:10;list-style-type:none;display:inline;
             margin-top: 20px;
-font-size: 30px;
+            font-size: medium;
         }
         nav a {
   text-decoration: none;
   color: hsl(266, 78%, 45%); /* Link text color */
-  font-weight: 500;
+  font-size: larger;
 
 }
 .Student{
     text-align: center
+
+}
+.form-group{
+    font-display:sans-serif;
 }
 
     </style>
@@ -42,6 +46,7 @@ font-size: 30px;
                 <li><a href="{{route('contact')}}">Contacts</a></li>
                 <li><a href="{{ route('mvc') }}">MVC</a></li>
                 <li><a href="{{route('wel')}}">Welcome</a></li>
+                <li><a href="{{route('welcome')}}">Welcomed</a></li>
             </ul>
         </nav>
     </div>
