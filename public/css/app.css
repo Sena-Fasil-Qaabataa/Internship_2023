@@ -24,7 +24,7 @@ table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     padding: 8px;
 }
 
@@ -35,7 +35,7 @@ td {
 .cont {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    /* color: white; */
     font-size: 100;
 }
 
@@ -47,7 +47,7 @@ td {
 }
 
 .A {
-    color: #04AA6D;
+    color: blue;
 }
 
 

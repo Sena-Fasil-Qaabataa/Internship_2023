@@ -9,9 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-    @extends('layouts.base')
+    @extends('Extend.index')
     @section('content')
+
 <div class="jumbotron text-center">
   <h1>My PHP Laravel 10.x</h1>
   <p>Laravel is PHP's framework at the backend</p>

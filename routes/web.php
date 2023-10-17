@@ -22,7 +22,6 @@ Route::get('/base', function () {
 Route::get('/', function () {
     return view('layouts.base');
 })->name('base');
-
 Route::get('/mvc', function () {
     return view('Pages.mvc');
 })->name('mvc');
@@ -42,16 +41,12 @@ Route::get('/contact', function () {
 Route::get('/wel', function () {
     return view('Pages.wel');
 })->name('wel');
-Route::get('/index', function () {
-    return view('products.index');
-})->name('index');
-Route::get('/create', function () {
-    return view('products.create');
-})->name('create');
-Route::get('/edit', function () {
-    return view('products.edit');
-})->name('edit');
-
+Route::get('/side', function () {
+    return view('sidebar.sidebar');
+})->name('sidebar');
+Route::get('/view', function () {
+    return view('sidebar.view');
+})->name('view');
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
  Route::get('product/create',[ProductController::class,'create'])->name('product.create');
 Route::post('product',[ProductController::class,'store'])->name('product.store');

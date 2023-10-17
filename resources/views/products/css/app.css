@@ -1,0 +1,23 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed; /* Keeps the sidebar fixed while scrolling */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Background color */
+    padding-top: 20px; /* Space at the top */
+  }
+
+  /* Styling for the links in the sidebar */
+  .sidebar a {
+    padding: 30px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  /* Change link color on hover */
+  .sidebar a:hover {
+    background-color: blue;
+  }
