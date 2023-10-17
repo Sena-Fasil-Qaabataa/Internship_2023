@@ -2,5 +2,5 @@
 @section('content')
 
 <p>this is photo</p>
-my picdcfdc
+<img src="{{ asset('muni.jpg') }}" alt="">
 @endsection

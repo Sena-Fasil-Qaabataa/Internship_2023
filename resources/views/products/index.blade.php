@@ -32,7 +32,7 @@ margin: 0;
 </div>  --}}
 <div >
     <div class="cont">
-    <a class="A" href="{{ route('products.create') }}">create a product</a>
+    <a class="A" href="{{ route('product.create') }}">create a product</a>
 </div>
     <table border="4">
         <tr >
